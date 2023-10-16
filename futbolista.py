@@ -1,5 +1,5 @@
-from Persona import Persona
-from Deportista import Deportista
+from persona import Persona
+from deportista import Deportista
 class Futbolista(Persona, Deportista):
     _listaFutbolistas = []
     def __init__(self,nombre,edad,altura,sexo,deporte,añosPracticando,golesMarcados,tarjetasRojas,piernaHabil,listaFutbolistas):
@@ -27,6 +27,6 @@ class Futbolista(Persona, Deportista):
     
     def setPiernaHabil(self,piernaHabil):
         self._piernaHabil = piernaHabil
-        
+
     def __str__(self) -> str:
         return "Mi nombre es "+self.getNombre()+" soy profesional en el deporte "+self.getDeporte()+" Tengo "+str(self.getEdad())+" años de edad y llevo "+str(self.getAñosPracticando())+" años en el deporte"
